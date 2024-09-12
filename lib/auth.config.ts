@@ -6,7 +6,7 @@ import CredentialsProvider from 'next-auth/providers/credentials';
 import { env } from './env';
 import { prisma_db } from './prisma_db';
 import { getUserByEmail } from '@/utils/api-methods';
-import { compare, compareSync } from 'bcryptjs';
+import { compareSync } from 'bcryptjs';
 
 const authOptions: NextAuthOptions = {
   adapter: PrismaAdapter(prisma_db),
