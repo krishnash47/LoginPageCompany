@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 // Hashing function from bcrypt
-import { hash, hashSync } from 'bcryptjs';
+import { hashSync } from 'bcryptjs';
 import { isUserExists, registerNewUser } from '@/utils/api-methods';
 
 // API helper functions
